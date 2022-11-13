@@ -88,12 +88,12 @@ async def _(ping):
     duration = (end - start).microseconds / 1000
     user = await ping.client.get_me()
     await ping.client.send_message(
-        ping.chat_id, f"**╰•★★ |Ram Ping| ★★•╯**\n"
-                    f"★ **speed:** "
+        ping.chat_id, f"**Sena Ganteng 🇮🇩**\n"
+                    f"🇦🇲 **Kemampuan:** "
                     f"`%sms` \n"
-                    f"★ **Uptime:** "
+                    f"🇦🇲 **Kapabilitas:** "
                     f"`{uptime}` \n"
-                    f"★ **owner:** [{user.first_name}](tg://user?id={user.id})\n" % (duration), reply_to=ping.reply_to_msg_id)
+                    f"🇦🇲 **Tuhan:** [{user.first_name}](tg://user?id={user.id})\n" % (duration), reply_to=ping.reply_to_msg_id)
     await ping.delete()
 
 @ram_cmd(pattern="rping$")
@@ -129,14 +129,14 @@ async def _(pong):
     duration = (end - start).microseconds / 1000
     user = await pong.client.get_me()
     await pong.client.send_message(
-        pong.chat_id, f"**🌟𝗥𝗔𝗠-𝗨𝗕𝗢𝗧🌟**\n"
-                     f"** ➠  Sɪɢɴᴀʟ   :** "
+        pong.chat_id, f"**Sena Ganteng 🇮🇩**\n"
+                     f"** ➠  Sinyal   :** "
                      f"`%sms` \n"
-                     f"** ➠  Bᴏᴛᴠᴇʀ  :** "
+                     f"** ➠  Versi bot  :** "
                      f"`{BOT_VER}` \n"
-                     f"** ➠  Uᴘᴛɪᴍᴇ  :** "
+                     f"** ➠  Uptime  :** "
                      f"`{uptime}` \n"
-                     f"** ➠  Oᴡɴᴇʀ   :** [{user.first_name}](tg://user?id={user.id})" % (duration), reply_to=pong.reply_to_msg_id)
+                     f"** ➠  Pemilik   :** [{user.first_name}](tg://user?id={user.id})" % (duration), reply_to=pong.reply_to_msg_id)
     await pong.delete()
 
 @ram_cmd(pattern="pink$")
